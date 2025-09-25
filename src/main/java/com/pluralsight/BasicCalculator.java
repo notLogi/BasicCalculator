@@ -7,14 +7,15 @@ public class BasicCalculator {
         Scanner myScanner = new Scanner(System.in);
 
         System.out.println("Enter the first number: ");
-        int firstNumber = myScanner.nextInt();
+        double firstNumber = myScanner.nextDouble();
         System.out.println("Enter the second number: ");
-        int secondNumber = myScanner.nextInt();
+        double secondNumber = myScanner.nextDouble();
         myScanner.nextLine();
         System.out.println("Possible calculations:\n(A)dd\n(S)ubtract\n(M)ultiply\n(D)ivide");
         System.out.println("Please select an option: ");
         String operation = myScanner.nextLine();
         System.out.println(firstNumber + " * " + secondNumber + " = " + firstNumber * secondNumber);
 
+        myScanner.close();
     }
 }
